@@ -348,7 +348,7 @@ class Module extends BaseModule {
 		}
 
 		// Create the post types property as an array and include the landing pages CPT in it.
-		$query_post_types = [ 'post', 'page', self::CPT ];
+		$query_post_types = [ 'post', 'page', self::CPT , 'attachment'];
 
 		// Since WordPress determined this is supposed to be a page, we'll pre-set the post_type query arg to make sure
 		// it includes the Landing Page CPT, so when the query is parsed, our CPT will be a legitimate match to the
